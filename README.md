@@ -10,9 +10,9 @@ Proteger o Grub é interessante para restringir o seu acesso prevenindo a ediç�
 
 ``sudo grub-mkpasswd-pbkdf2``
 
-![terminal_password_creation](/img/password.png)
+Obs: Será necessário digitar tanto a senha do root como repetir a senha a ser criada.
 
-Obs: Será necessário digitar tanto a senha do root como repetir a senha a ser criada. 
+![terminal_password_creation](/img/password.png)
 
 #### Passo 3. Como o comando irá retornar o hash da senha digitada, salve-o em algum arquivo de texto.
 
@@ -26,7 +26,7 @@ Obs: Será necessário digitar tanto a senha do root como repetir a senha a ser 
 
 ``sudo nano /etc/grub.d/40_custom``
 
-![save_hash](/img/edit_grub2.png)
+![terminal_edit_grub_file](/img/edit_grub2.png)
 
 #### Passo 6. Adicione no final do arquivo as seguintes linhas:
 
@@ -36,13 +36,13 @@ Obs: Será necessário digitar tanto a senha do root como repetir a senha a ser 
 
 Sendo que em `set superusers="root"` são os usuários do sistema e em `grub.pbkdf2.sha512.xyz` o hash da sua senha que você deverá substituir.
 
-![save_hash](/img/edit_grub.png)
+![edit_grub_file](/img/edit_grub.png)
 
 #### Passo 7. Com as modificações finalizadas é necessário atualizar o Grub:
 
 ``sudo update-grub``
 
-![save_hash](/img/update_grub.png)
+![update_grub](/img/update_grub.png)
 
 #### Passo 8. Reinicie o sistema.
 
