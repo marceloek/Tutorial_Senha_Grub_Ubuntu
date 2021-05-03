@@ -34,7 +34,7 @@ Obs: Será necessário digitar tanto a senha do root como repetir a senha a ser 
 
 ``password_pbkdf2 root grub.pbkdf2.sha512.xyz``
 
-Sendo que em `set superusers="root"` são os usuários do sistema e em `grub.pbkdf2.sha512.xyz` o hash da sua senha que você deverá substituir.
+Sendo que em `set superusers="root"` são os usuários do sistema e em `grub.pbkdf2.sha512.xyz` o hash da sua senha que você salvou no Passo 3.
 
 ![edit_grub_file](/img/edit_grub.png)
 
